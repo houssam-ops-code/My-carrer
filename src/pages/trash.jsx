@@ -106,3 +106,21 @@
           </div>
         </div>
       </section>*/
+
+      /*What is it?
+
+↓
+
+Why did you build it?
+
+↓
+
+What was difficult?
+
+↓
+
+How did you solve it?
+
+↓
+
+What did you learn?*/

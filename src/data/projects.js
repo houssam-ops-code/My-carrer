@@ -1,19 +1,24 @@
 export const projects = [
     {
         id: 1,
-        title: "",
+        title: "SO Tech Learning",
         image: "",
-        description: "",
+        shortdesc: "",
+        longdesc: "",
+        category: "",
+        year: "",
+        status: "",
         technologie: "",
         challenges: "...",
         whatILearned: "...",
         github: "",
         demo: "",
-        details: ""
+        details: "",
+        featured: ""
     },
     {
         id: 2,
-        title: "",
+        title: "Trello Dashboard",
         image: "",
         description: "",
         technologie: "",
@@ -25,7 +30,7 @@ export const projects = [
     },
     {
         id: 3,
-        title: "",
+        title: "Football Management System",
         image: "",
         description: "",
         technologie: "",
@@ -37,7 +42,7 @@ export const projects = [
     },
     {
         id: 4,
-        title: "",
+        title: "Human Body Learning",
         image: "",
         description: "",
         technologie: "",
@@ -49,7 +54,7 @@ export const projects = [
     },
     {
         id: 5,
-        title: "",
+        title: "GLPI Deployement",
         image: "",
         description: "",
         technologie: "",

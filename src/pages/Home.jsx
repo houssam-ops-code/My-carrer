@@ -1,34 +1,19 @@
 import HeroSection from "../organisms/HeroSection";
-import SectionTitle from "../common/SectionTitle";
-import Card from "../common/Card";
-import Button from "../common/Button";
-import { projects } from "../data/projects";
-import { skills } from "../data/skills";
-import { experience } from "../data/experience";
-import { personalInfo } from "../data/personalInfo";
-import About from "./About";
-import Projects from "./Projects";
-import Skills from "./Skills";
-import Experience from "./Experience";
-import Contact from "./Contact";
-import ContactCTA from "./ContactCTA";
+import AboutPreview from "../components/ui/AboutPreview";
+import FeaturedPreview from "../components/ui/FeaturedProjects"
+import SkillsPreview from "../components/ui/SkillsPreview";
+import ExperiencePreview from "../components/ui/ExperiencePreview";
+import ContactCTA from "../components/ui/ContactCTA";
 
 function Home() {
   return (
     <>
       <HeroSection />
-
-      <About />
-
-      <Projects />
-
-      <Skills />
-
-      <Experience />
-
+      <AboutPreview />
+      <FeaturedPreview />
+      <SkillsPreview />
+      <ExperiencePreview />
       <ContactCTA />
-
-      
     </>
   );
 }
