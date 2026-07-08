@@ -1,6 +1,7 @@
 export const projects = [
     {
         id: 1,
+        title: "",
         image: "",
         description: "",
         technologie: "",
@@ -12,6 +13,7 @@ export const projects = [
     },
     {
         id: 2,
+        title: "",
         image: "",
         description: "",
         technologie: "",
@@ -23,6 +25,7 @@ export const projects = [
     },
     {
         id: 3,
+        title: "",
         image: "",
         description: "",
         technologie: "",
@@ -34,6 +37,7 @@ export const projects = [
     },
     {
         id: 4,
+        title: "",
         image: "",
         description: "",
         technologie: "",
@@ -45,6 +49,7 @@ export const projects = [
     },
     {
         id: 5,
+        title: "",
         image: "",
         description: "",
         technologie: "",

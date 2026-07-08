@@ -2,21 +2,22 @@ export const skills = [
     {
         id: 1,
         group: "Frontend",
-        skill: "A" - "B"
+        skill: ["A", "B"]
     },
     {
         id: 2,
         group: "Backend",
-        skill: ""
+        skill: [""]
     },
     {
         id: 3,
         group: "Database",
-        skill: ""
+        skill: [""]
     },
     {
         id: 4,
         group: "Tools",
-        skill: ""
+        skill: [""]
     }
+    //do like a folder form container(like the one i downloaded) where there is the title in the up left
 ];

@@ -1,4 +1,4 @@
-const experience = [
+export const experience = [
   {
     year: "2025",
     title: "Started Programming",
@@ -24,5 +24,3 @@ const experience = [
       "Looking for an internship to gain professional experience and continue growing as a software developer.",
   },
 ];
-
-export default experience;
