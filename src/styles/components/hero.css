@@ -77,22 +77,15 @@
 
 .globe-icon {
   position: absolute;
-
-  width: 60px;
-  height: 60px;
-
-  border-radius: 50%;
-
+  padding:.8rem 1.2rem;
+  border-radius:999px;
+  min-width:90px;
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: var(--surface-color);
-
   border: 1px solid rgba(255,255,255,.08);
-
   box-shadow: var(--shadow-md);
-
   transition: transform .3s;
 }
 
@@ -103,6 +96,36 @@
 .globe-icon span {
   font-size: 30px;
   color: var(--primary-color);
+}
+
+.hero-social{
+
+    display:flex;
+
+    gap:1.5rem;
+
+    margin-top:2rem;
+
+}
+
+.hero-social a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.5rem;
+
+    color:var(--text-secondary);
+
+    transition:var(--transition);
+
+}
+
+.hero-social a:hover{
+
+    color:var(--primary-color);
+
 }
 
 @media (max-width: 900px) {

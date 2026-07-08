@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <NavLink to="/" className="footer-brand">My carrer</NavLink>
+        <NavLink to="/" className="footer-brand">Houssam.dev ⭐</NavLink>
         <div className="footer-copy">
           &copy; {new Date().getFullYear()} Houssam BENRBIB. Tous droits r&eacute;serv&eacute;s.
         </div>
@@ -12,8 +12,11 @@ function Footer() {
           <NavLink to="/" className="footer-link">
             Accueil
           </NavLink>
-          <NavLink to="/services" className="footer-link">
-            Services
+          <NavLink to="/skills" className="footer-link">
+            Skills
+          </NavLink>
+          <NavLink to="/about" className="footer-link">
+            About
           </NavLink>
           <NavLink to="/contact" className="footer-link">
             Contact
