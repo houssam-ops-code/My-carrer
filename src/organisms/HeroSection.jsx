@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Button from "../common/Button";
 import { personalInfo } from "../data/personalInfo";
 import useGlobeAnimation from "../data/animation";
+import profile from "../assets/images/myphoto.png";
 import {
     FaGithub,
     FaLinkedin,
@@ -92,7 +93,7 @@ function HeroSection() {
           <div className="hero-photo">
 
           <img
-              src="../assets/images/myphoto.png"
+              src={profile}
               alt="Houssam Benrbib"
           />
           </div>
