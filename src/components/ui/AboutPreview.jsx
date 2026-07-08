@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import SectionTitle from "../../common/SectionTitle";
 import Button from "../../common/Button";
-import personalInfo from "../../data/personalInfo";
+import { personalInfo } from "../../data/personalInfo";
 
 function AboutPreview() {
   return (

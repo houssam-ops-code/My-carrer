@@ -1,6 +1,6 @@
 import SectionTitle from "../../common/SectionTitle";
 import Button from "../../common/Button";
-import experience from "../../data/experience";
+import { experience } from "../../data/experience";
 
 function ExperiencePreview() {
   return (

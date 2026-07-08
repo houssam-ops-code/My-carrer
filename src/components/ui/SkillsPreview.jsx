@@ -1,6 +1,6 @@
 import SectionTitle from "../../common/SectionTitle";
 import Button from "../../common/Button";
-import skills from "../../data/skills";
+import { skills } from "../../data/skills";
 
 function SkillsPreview() {
   return (

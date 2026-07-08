@@ -1,0 +1,13 @@
+@import "./base/variables.css";
+@import "./base/typography.css";
+
+/* Components */
+@import "./components/hero.css";
+@import "./components/navbar.css";
+@import "./components/footer.css";
+@import "./components/button.css";
+@import "./components/card.css";
+@import "./components/project-card.css";
+
+/* Pages */
+@import "./pages/home.css";
