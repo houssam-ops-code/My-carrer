@@ -58,6 +58,49 @@
   color: var(--primary-color);
 }
 
+.hero-visual{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:500px;
+
+}
+
+.hero-photo{
+
+    position:absolute;
+
+    z-index:20;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:5px solid var(--surface-color);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.hero-photo img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
 .globe {
   position: relative;
 

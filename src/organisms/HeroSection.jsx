@@ -8,10 +8,13 @@ import {
     FaEnvelope,
     FaReact,
     FaPhp,
-    SiMysql,
-    FaGitAlt,
-    SiJavascript
+    FaGitAlt
 } from "react-icons/fa";
+
+import {
+  SiJavascript,
+  SiMysql,
+} from "react-icons/si";
 
 function HeroSection() {
   const containerRef = useRef(null);
@@ -85,45 +88,53 @@ function HeroSection() {
             </div>
           </div>
         </div>
+        <div className="hero-visual">
+          <div className="hero-photo">
 
-        <div
-          className="globe"
-          ref={containerRef}
-        >
-          <svg
-            ref={svgRef}
-            className="globe-svg"
-            viewBox="0 0 300 300"
+          <img
+              src="../assets/images/myphoto.png"
+              alt="Houssam Benrbib"
           />
-
-          <div className="globe-icon" id="icon-0">
-            <span className="material-symbols-outlined">
-              <FaReact />
-            </span>
           </div>
+          <div
+            className="globe"
+            ref={containerRef}
+          >
+            <svg
+              ref={svgRef}
+              className="globe-svg"
+              viewBox="0 0 300 300"
+            />
 
-          <div className="globe-icon" id="icon-1">
-            <span className="material-symbols-outlined">
-              <FaPHP />
-            </span>
-          </div>
+            <div className="globe-icon" id="icon-0">
+              <span className="material-symbols-outlined">
+                <FaReact />
+              </span>
+            </div>
 
-          <div className="globe-icon" id="icon-2">
-            <span className="material-symbols-outlined">
-              <SiMySQL />
-            </span>
-          </div>
+            <div className="globe-icon" id="icon-1">
+              <span className="material-symbols-outlined">
+                <FaPhp />
+              </span>
+            </div>
 
-          <div className="globe-icon" id="icon-3">
-            <span className="material-symbols-outlined">
-              <FaGitAlt />
-            </span>
-          </div>
+            <div className="globe-icon" id="icon-2">
+              <span className="material-symbols-outlined">
+                <SiMysql />
+              </span>
+            </div>
 
-          <div className="globe-icon" id="icon-4">
-            <span className="material-symbols-outlined">
-              JavaScript
-            </span>
+            <div className="globe-icon" id="icon-3">
+              <span className="material-symbols-outlined">
+                <FaGitAlt />
+              </span>
+            </div>
+
+            <div className="globe-icon" id="icon-4">
+              <span className="material-symbols-outlined">
+                <SiJavascript />
+              </span>
+            </div>
           </div>
         </div>
       </div>
