@@ -7,6 +7,7 @@ import Skills from "./pages/Skills";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Stars from "./space/Stars";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
 
         <main className="main-content">
+          <Stars />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />

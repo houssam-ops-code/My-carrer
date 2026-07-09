@@ -1,25 +1,28 @@
+import { NavLink } from "react-router-dom";
 import SectionTitle from "../../common/SectionTitle";
 import ProjectCard from "./ProjectCard";
 import { projects } from "../../data/projects";
-import Button from "../../common/Button";
+import Magnetic from "../../motion/Magnetic";
 
 function FeaturedProjects() {
+
   const featuredProjects = projects.filter(
-    project => project.featured
+    (project) => project.featured
   );
 
   return (
-    <section className="featured-projects">
+    <section className="featured-projects section">
+
       <div className="container">
 
         <SectionTitle
           title="Featured Projects"
-          description="A selection of projects that best represent my work."
+          description="Some of the projects that best represent my skills and passion for software development."
         />
 
-        <div className="projects-grid">
+        <div className="featured-grid">
 
-          {featuredProjects.map(project => (
+          {featuredProjects.map((project) => (
             <ProjectCard
               key={project.id}
               project={project}
@@ -28,11 +31,21 @@ function FeaturedProjects() {
 
         </div>
 
-        <Button to="/projects">
-          View All Projects
-        </Button>
+        <div className="featured-button">
+
+          <Magnetic>
+          <NavLink
+            to="/projects"
+            className="btn btn-primary"
+          >
+            View All Projects
+          </NavLink>
+          </ Magnetic>
+
+        </div>
 
       </div>
+
     </section>
   );
 }

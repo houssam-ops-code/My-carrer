@@ -1,89 +1,66 @@
-import Button from "../../common/Button";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
 function ProjectCard({ project }) {
-  const {
-    title,
-    image,
-    shortDescription,
-    category,
-    year,
-    status,
-    technologies,
-    github,
-    demo,
-  } = project;
 
   return (
+
     <article className="project-card">
 
-      <div className="project-image">
-        <img
-          src={image || "/images/project-placeholder.png"}
-          alt={title}
-        />
-      </div>
+      <img
+        src={project.image}
+        alt={project.title}
+        className="project-image"
+      />
 
-      <div className="project-content">
+      <div className="project-overlay">
 
-        <div className="project-header">
-          <h3>{title}</h3>
+        <div className="project-content">
 
-          <span className="project-status">
-            {status}
-          </span>
-        </div>
+          <h3>{project.title}</h3>
 
-        <div className="project-meta">
-          <span>{category}</span>
-          <span>•</span>
-          <span>{year}</span>
-        </div>
+          <p>{project.shortdesc}</p>
 
-        <p className="project-description">
-          {shortDescription}
-        </p>
+          <div className="project-tech">
 
-        <div className="project-technologies">
-          {technologies.map((tech) => (
-            <span
-              key={tech}
-              className="tech-badge"
+            {project.technologies?.map((tech) => (
+
+              <span key={tech}>
+                {tech}
+              </span>
+
+            ))}
+
+          </div>
+
+          <div className="project-buttons">
+
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary"
             >
-              {tech}
-            </span>
-          ))}
-        </div>
+              <FiExternalLink />
+            </a>
 
-        <div className="project-actions">
-
-          {github && (
-            <Button
-              to={github}
-              variant="secondary"
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-secondary"
             >
-              GitHub
-            </Button>
-          )}
+              <FaGithub />
+            </a>
 
-          {demo && (
-            <Button
-              to={demo}
-            >
-              Live Demo
-            </Button>
-          )}
-
-          <Button
-            to={`/projects/${project.id}`}
-          >
-            Details
-          </Button>
+          </div>
 
         </div>
 
       </div>
 
     </article>
+
   );
 }
 
