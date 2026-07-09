@@ -1,10 +1,11 @@
 import SectionTitle from "../../common/SectionTitle";
 import Button from "../../common/Button";
+import SkillCategory from "./SkillCategory";
 import { skills } from "../../data/skills";
 
 function SkillsPreview() {
   return (
-    <section className="skills-preview">
+    <section className="page-section">
       <div className="container">
 
         <SectionTitle
@@ -12,35 +13,23 @@ function SkillsPreview() {
           description="Technologies I use to build modern applications."
         />
 
-        <div className="skills-grid">
+        <div className="skills-preview">
 
-          {skills.map(group => (
-            <div
-              className="skill-group"
+          {skills.map((group) => (
+            <SkillCategory
               key={group.category}
-            >
-              <h3>{group.category}</h3>
-
-              <div className="skill-list">
-
-                {group.items.map(skill => (
-                  <span
-                    key={skill}
-                    className="skill-badge"
-                  >
-                    {skill}
-                  </span>
-                ))}
-
-              </div>
-            </div>
+              title={group.category}
+              skills={group.items}
+            />
           ))}
 
         </div>
 
-        <Button to="/skills">
-          View All Skills
-        </Button>
+        <div className="section-actions">
+          <Button to="/skills">
+            View all skills
+          </Button>
+        </div>
 
       </div>
     </section>

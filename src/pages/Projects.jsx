@@ -1,39 +1,21 @@
-import { projects } from "../data/projectfill";
-import ProjectCard from "../components/ui/ProjectCard";
+import SectionTitle from "../common/SectionTitle";
+import ProjectGrid from "../components/ui/ProjectGrid";
 
 function Projects() {
-    return (
-        <>
-            <h1>Projects</h1>
-            <h3>I have sone so many projects such as:</h3>
-            
-            {projects.map(project => (
-                <ProjectCard 
-                    key={project.id} project={project} 
-                    title={project.title}
-                    image={project.image}
-                    desc={project.description}
-                    techno={project.technologie}
-                    challenges={project.challenges}
-                    learn={project.whatILearned}
-                    github={project.github}
-                    demo={project.demo}
-                    details={project.details}
-                />
-            ))}
+  return (
+    <section className="page-section">
+      <div className="container">
 
-            <p>SO Tech Learning</p>
-            <p>Trello Dashboard</p>
-            <p>Football Management System</p>
-            <p>Human Body Learning</p>
-            <p>GLPI Deployement</p>
+        <SectionTitle
+          title="Projects"
+          description="A selection of projects I've worked on during my studies and personal learning journey."
+        />
 
-        </>
-    )
+        <ProjectGrid />
+
+      </div>
+    </section>
+  );
 }
-//image
-//description
-//technologies
-//GitHub
-//Live Demo (if available)
+
 export default Projects;

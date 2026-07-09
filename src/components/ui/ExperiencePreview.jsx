@@ -4,7 +4,7 @@ import { experience } from "../../data/experience";
 
 function ExperiencePreview() {
   return (
-    <section className="experience-preview">
+    <section className="page-section">
       <div className="container">
 
         <SectionTitle
@@ -28,11 +28,11 @@ function ExperiencePreview() {
           ))}
 
         </div>
-
-        <Button to="/experience">
-          View Timeline
-        </Button>
-
+        <div className="section-actions">
+            <Button to="/experience">
+            View Timeline
+            </Button>
+        </div>
       </div>
     </section>
   );

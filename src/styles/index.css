@@ -3,13 +3,12 @@
 @import "./base/typography.css";
 @import "./base/layout.css";
 
-@import "./components/hero.css";
-@import "./components/navbar.css";
-@import "./components/footer.css";
-@import "./components/button.css";
-@import "./components/card.css";
-@import "./components/project-card.css";
+@import "./components/common.css";
+@import "./components/layout.css";
+@import "./components/ui.css";
 
 @import "./pages/home.css";
 
 @import "./space/space.css";
+
+@import "./components/ui.css";
